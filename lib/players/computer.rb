@@ -19,6 +19,7 @@ module Players
             move = combo.select{|i| !board.taken?(i+1)}.first.to_i.+(1).to_s
           end
         end
+        
     end
     
   end
