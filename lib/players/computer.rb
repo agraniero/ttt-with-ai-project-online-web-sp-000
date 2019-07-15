@@ -8,7 +8,8 @@ module Players
       elsif board.turn_count ==1 
         move = '1'
       elsif board.turn_count ==2
-        move = [1,3,7,9].detect {|index| !boardta
+        move = [1,3,7,9].detect {|index| !board.taken?(index)}.to_S
+      elsif 
     end
     
   end
