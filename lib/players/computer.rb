@@ -14,6 +14,7 @@ module Players
       else
         Game::WIN_COMBINATIONS.detect do |combo|
           if combo.select {|i| board.position(i+1) == token}.size == 2 && combo.any?{|i| board.position(i+1) == " "}
+            
     end
     
   end
