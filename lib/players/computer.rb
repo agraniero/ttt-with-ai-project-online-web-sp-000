@@ -10,7 +10,7 @@ module Players
       elsif board.turn_count ==2
         move = [1,3,7,9].detect {|index| !board.taken?(index)}.to_S
       elsif board.turn_count ==3 && (board.position(1) == board.position(9) || board.position(3) == board.position(7))
-          move = 
+          move = '2'
     end
     
   end
