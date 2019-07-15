@@ -13,7 +13,7 @@ module Players
           move = '2'
       else
         Game::WIN_COMBINATIONS.detect do |combo|
-          if combo.select {|i| 
+          if combo.select {|i| !board.taken?(i + 1)}.first.to_i.+(1).to_s
     end
     
   end
